@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Graph & Social Meta Tag Generator | Zero-Login Free Tool</title>
+  <meta name="description" content="Generate Open Graph (OG), Twitter Card meta tags, and Schema.org JSON-LD structured markup with live interactive previews for Facebook, Twitter, and Google Search.">
+  <meta name="keywords" content="open graph generator, social meta tag generator, twitter card generator, json ld schema generator, og title description image preview, seo meta tags">
+  <link rel="canonical" href="https://socialmetatags.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://socialmetatags.app/">
+  <meta property="og:title" content="Open Graph & Social Meta Tag Generator">
+  <meta property="og:description" content="Build Open Graph meta tags, Twitter Cards, and JSON-LD schema with live social card previews.">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Social Meta Tag Generator",
+    "url": "https://socialmetatags.app/",
+    "description": "Zero-login SEO tool for generating Open Graph, Twitter Card, and JSON-LD meta tags with real-time preview.",
+    "applicationCategory": "SEOApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="icon">🏷️</span>
+      <span class="title">Meta Tag Architect</span>
+    </div>
+    <div class="badge">SEO & Open Graph Studio</div>
+  </header>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Open Graph & Social Meta Tag Generator</h1>
+      <p>Configure Open Graph, Twitter Large Card, and Schema.org JSON-LD tags. Inspect real-time visual previews for Facebook, Twitter/X, and Google Search Snippets.</p>
+    </header>
+
+    <div class="grid">
+      <!-- Left Panel: Meta Form Input -->
+      <section class="card glass-panel">
+        <h2><span class="step-num">1</span> Meta Information</h2>
+
+        <div class="form-group">
+          <label for="metaTitle">Page Title (og:title)</label>
+          <input type="text" id="metaTitle" value="Antigravity — Build High-Traffic Web Tools Fast" placeholder="Max 60 chars">
+        </div>
+
+        <div class="form-group">
+          <label for="metaDescription">Meta Description (og:description)</label>
+          <textarea id="metaDescription" rows="3" placeholder="Max 160 chars">Discover 10 zero-login, high-intent web micro-tools engineered for modern web developers, founders, and digital marketers.</textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="metaUrl">Canonical Page URL (og:url)</label>
+            <input type="text" id="metaUrl" value="https://antigravity.io/tools">
+          </div>
+          <div class="form-group">
+            <label for="siteName">Site Name (og:site_name)</label>
+            <input type="text" id="siteName" value="Antigravity">
+          </div>
+        </div>
+
+        <div class="form-group margin-top">
+          <label for="imageUrl">Open Graph Image URL (og:image)</label>
+          <input type="text" id="imageUrl" value="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=630&fit=crop">
+        </div>
+
+        <h2><span class="step-num">2</span> Twitter & Schema Settings</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="twitterCard">Twitter Card Type</label>
+            <select id="twitterCard">
+              <option value="summary_large_image" selected>summary_large_image (Large Card)</option>
+              <option value="summary">summary (Small Icon)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="twitterHandle">Twitter @Username</label>
+            <input type="text" id="twitterHandle" value="@antigravity_io">
+          </div>
+        </div>
+
+        <div class="form-group margin-top">
+          <label for="schemaType">Schema.org Structured Type</label>
+          <select id="schemaType">
+            <option value="WebSite" selected>WebSite</option>
+            <option value="Article">Article / Blog</option>
+            <option value="SoftwareApplication">Software / Web Application</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Right Panel: Live Visual Social Preview & HTML Code -->
+      <section class="card glass-panel results-section">
+        <h2>Live Social Media Card Previews</h2>
+
+        <!-- Facebook / LinkedIn Card Preview -->
+        <div class="preview-card-container">
+          <span class="card-preview-label">Facebook & LinkedIn Feed Card</span>
+          <div class="fb-card">
+            <div class="card-img-wrapper">
+              <img id="prevImgFb" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=630&fit=crop" alt="OG Preview">
+            </div>
+            <div class="card-body">
+              <span id="prevDomainFb" class="card-domain">ANTIGRAVITY.IO</span>
+              <h3 id="prevTitleFb" class="card-title">Antigravity — Build High-Traffic Web Tools Fast</h3>
+              <p id="prevDescFb" class="card-desc">Discover 10 zero-login, high-intent web micro-tools engineered for modern web developers, founders, and digital marketers.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Search Snippet Preview -->
+        <div class="preview-card-container margin-top">
+          <span class="card-preview-label">Google Search Result Snippet</span>
+          <div class="google-card">
+            <cite id="prevUrlGoogle">https://antigravity.io › tools</cite>
+            <h3 id="prevTitleGoogle">Antigravity — Build High-Traffic Web Tools Fast</h3>
+            <p id="prevDescGoogle">Discover 10 zero-login, high-intent web micro-tools engineered for modern web developers, founders, and digital marketers.</p>
+          </div>
+        </div>
+
+        <!-- HTML & JSON-LD Output -->
+        <div class="output-block margin-top">
+          <div class="output-header">
+            <span>Generated HTML & JSON-LD Meta Code</span>
+            <button id="btnCopyMeta" class="btn btn-sm btn-accent">📋 Copy Code</button>
+          </div>
+          <textarea id="metaOutput" readonly rows="8" class="code-font"></textarea>
+        </div>
+      </section>
+    </div>
+
+    <!-- SEO Informational Article Section -->
+    <article class="card glass-panel seo-content">
+      <h2>Why Open Graph & Schema Markup Are Critical for Modern SEO</h2>
+      <p>When users share URLs on platforms like Facebook, Twitter, LinkedIn, WhatsApp, and Slack, web scrapers fetch <strong>Open Graph (og:)</strong> and <strong>Twitter Card</strong> meta tags to render rich visual link cards. Pages with rich previews achieve up to 3x higher click-through rates (CTR).</p>
+
+      <h3>Essential Open Graph Tags:</h3>
+      <ul>
+        <li><code>og:title</code> - Headline of the content (optimal length 40-60 characters).</li>
+        <li><code>og:description</code> - 2-3 sentence summary (optimal length 120-160 characters).</li>
+        <li><code>og:image</code> - High-resolution image (recommended dimension 1200 x 630 pixels).</li>
+        <li><code>og:url</code> - Canonical permalink URL.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Meta Tag Architect. Free Zero-Login SEO Tool.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
